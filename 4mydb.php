@@ -8,9 +8,9 @@
     mysqli_set_charset($conn, "utf8");//使用utf8編碼
     $result=mysqli_query($conn, "select * from user");//回傳先前$conn裡的值
     while ($row=mysqli_fetch_array($result)) {
-        echo $row['id'];
+        echo $row[id];
         echo " ";
-        echo $row['pwd'];
+        echo $row[pwd];
         echo "<br>"; //當數據庫裡的值等於回傳的值 顯示id以及pwd
     }
 ?>
