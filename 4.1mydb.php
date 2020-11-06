@@ -5,5 +5,5 @@
 
     $row=mysqli_fetch_array($result);//$row代表查詢數據庫裡的資料
 
-    echo $row['id'] + " " + $row['pwd']; //顯示出數據庫裡的id以及pwd
+    echo $row[id] + " " + $row[pwd]; //顯示出數據庫裡的id以及pwd
 ?>
